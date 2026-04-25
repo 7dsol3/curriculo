@@ -1,0 +1,143 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  .cv{display:grid;grid-template-columns:260px 1fr;min-height:600px;font-family:'DM Sans',sans-serif;background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden}
+  .sidebar{background:#1a1a2e;color:#e8e4dc;padding:2rem 1.5rem;display:flex;flex-direction:column;gap:1.5rem}
+  .name{font-family:'DM Serif Display',serif;font-size:2rem;line-height:1.1;letter-spacing:-0.5px;color:#f0ece2}
+  .name span{font-style:italic;color:#c9a96e}
+  .role{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#8a8a9a;margin-top:6px}
+  .avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#c9a96e,#8a6a3a);display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif;font-size:1.8rem;color:#1a1a2e;font-weight:700;flex-shrink:0}
+  .section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;border-bottom:1px solid #2e2e4a;padding-bottom:6px;margin-bottom:10px}
+  .contact-item{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:#b0b0c0;line-height:1.4;margin-bottom:8px}
+  .contact-icon{font-size:14px;flex-shrink:0;margin-top:1px}
+  .skill-pill{display:inline-block;background:#2e2e4a;color:#d0cce0;font-size:11px;padding:4px 10px;border-radius:20px;margin:3px 2px}
+  .lang-row{display:flex;gap:8px;flex-wrap:wrap}
+  .lang-tag{background:transparent;border:1px solid #2e2e4a;color:#8a8a9a;font-size:11px;padding:4px 12px;border-radius:20px}
+  .main{padding:2rem 2rem;display:flex;flex-direction:column;gap:1.5rem}
+  .main-section-title{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;border-bottom:0.5px solid var(--color-border-tertiary);padding-bottom:6px;margin-bottom:1rem}
+  .exp-item{display:grid;grid-template-columns:3px 1fr;gap:0 14px;margin-bottom:1.2rem}
+  .exp-line{background:#c9a96e;border-radius:2px;margin-top:4px}
+  .exp-year{font-size:11px;color:var(--color-text-secondary);font-weight:400;margin-bottom:3px}
+  .exp-title{font-family:'DM Serif Display',serif;font-size:1rem;color:var(--color-text-primary)}
+  .exp-sub{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:4px}
+  .exp-desc{font-size:12px;color:var(--color-text-secondary);line-height:1.6}
+  .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .skill-group-title{font-size:11px;font-weight:500;color:var(--color-text-primary);margin-bottom:8px}
+  .skill-row{font-size:12px;color:var(--color-text-secondary);padding:3px 0;border-bottom:0.5px solid var(--color-border-tertiary);line-height:1.4}
+  .about-text{font-size:12.5px;color:#c0bcd0;line-height:1.7}
+  .about-text+.about-text{margin-top:10px}
+  .social-row{display:flex;flex-direction:column;gap:6px}
+  .social-link{font-size:11px;color:#8a8a9a;text-decoration:none;display:flex;align-items:center;gap:6px}
+  .social-dot{width:6px;height:6px;border-radius:50%;background:#c9a96e;flex-shrink:0}
+</style>
+<div class="cv">
+  <div class="sidebar">
+    <div>
+      <div class="avatar">AO</div>
+      <div class="name">Adilson<br><span>Oliveira</span></div>
+      <div class="role">Engenharia de Software</div>
+    </div>
+
+    <div>
+      <div class="section-label">Contato</div>
+      <div class="contact-item"><span class="contact-icon">⌖</span><span>E, J, SP</span></div>
+      <div class="contact-item"><span class="contact-icon">✉</span><span>@gmail.com</span></div>
+      <div class="contact-item"><span class="contact-icon">☏</span><span>+55 00000000</span></div>
+      <div class="contact-item"><span class="contact-icon">⊕</span><span>linkedin.com/in/adilson-oliveira779490283</span></div>
+    </div>
+
+    <div>
+      <div class="section-label">Redes Sociais</div>
+      <div class="social-row">
+        <a class="social-link" href="#"><span class="social-dot"></span> GitHub: 7dsol3 / 7dsolv</a>
+        <a class="social-link" href="#"><span class="social-dot"></span> Instagram: 7dsolv</a>
+        <a class="social-link" href="#"><span class="social-dot"></span> Telegram: t.me/A7dsolv3</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-label">Idiomas</div>
+      <div class="lang-row">
+        <span class="lang-tag">Português</span>
+        <span class="lang-tag">Inglês</span>
+        <span class="lang-tag">Espanhol</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-label">Sobre mim</div>
+      <p class="about-text">Profissional que une tecnologia e compreensão humana para criar soluções de saúde mental — apps e IA para monitorar, apoiar e facilitar o acesso ao cuidado psicológico.</p>
+      <p class="about-text" style="margin-top:10px;font-style:italic;font-size:11.5px;color:#6e6e8a">"A tecnologia é apenas uma extensão daquilo que somos."</p>
+    </div>
+  </div>
+
+  <div class="main">
+    <div>
+      <div class="main-section-title">Experiência Profissional</div>
+      <div class="exp-item">
+        <div class="exp-line"></div>
+        <div>
+          <div class="exp-year">Desenvolvimento contínuo</div>
+          <div class="exp-title">Desenvolvimento Acadêmico</div>
+          <div class="exp-sub">Avaliação Técnica de Engenharia</div>
+          <div class="exp-desc">Construo soluções com precisão e adaptação constante, unindo lógica, criatividade e eficiência em cada projeto.</div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-line"></div>
+        <div>
+          <div class="exp-year">2023</div>
+          <div class="exp-title">Inteligência Artificial</div>
+          <div class="exp-sub">Framework de Avaliação de IA</div>
+          <div class="exp-desc">Experiência prática no uso de IA voltada para criação, análise e estruturação de ideias complexas. Desenvolvimento de modelos conceituais, raciocínio lógico e integração de criatividade com lógica para transformar pensamentos abstratos em soluções organizadas.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="main-section-title">Educação</div>
+      <div class="exp-item">
+        <div class="exp-line"></div>
+        <div>
+          <div class="exp-year">2024 – 2028</div>
+          <div class="exp-title">Bacharelado em Engenharia</div>
+          <div class="exp-sub">Centro Universitário Leonardo da Vinci (UNIASSELVI)</div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-line"></div>
+        <div>
+          <div class="exp-year">2026</div>
+          <div class="exp-title">Engenharia de Software</div>
+          <div class="exp-sub">Estágio Empresarial</div>
+          <div class="exp-desc">Consolidação de certificações por meio do estágio e colaboração direta com empresas, com validação e acompanhamento de diplomas e referências profissionais.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="main-section-title">Habilidades</div>
+      <div class="skills-grid">
+        <div>
+          <div class="skill-group-title">Hard Skills</div>
+          <div class="skill-row">Raciocínio matemático e lógico</div>
+          <div class="skill-row">Pensamento sistêmico</div>
+          <div class="skill-row">Criação conceitual / modelagem</div>
+          <div class="skill-row">Escrita criativa e filosófica</div>
+          <div class="skill-row">Meta-skills & Execution skills</div>
+          <div class="skill-row">Cognitive & Emotional Intelligence</div>
+        </div>
+        <div>
+          <div class="skill-group-title">Soft Skills</div>
+          <div class="skill-row">Ambição intelectual</div>
+          <div class="skill-row">Mentalidade de construção</div>
+          <div class="skill-row">Autopercepção e reflexão</div>
+          <div class="skill-row">Valorização de vínculo e lealdade</div>
+          <div class="skill-row">Social & Strategic Intelligence</div>
+          <div class="skill-row">Identity & Mindset</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
